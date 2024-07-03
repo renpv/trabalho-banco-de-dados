@@ -1,7 +1,12 @@
 # DISCIPLINA | Experiência Profissional: Banco de Dados Relacional
 
-O presente trabalho faz parte da disciplina Experiência Profissional: Banco de Dados Relacional e tem como orientador o professor [Lucas Martins dos Santos](http://lattes.cnpq.br/4116998659541235).
-Esse repositório é composto pelos seguintes arquivos:
+O presente trabalho faz parte da disciplina Experiência Profissional: Banco de Dados Relacional (Uniasselvi) e tem como orientador o professor [Lucas Martins dos Santos](http://lattes.cnpq.br/4116998659541235).
+
+## Membros do grupo:
+ - Francisco Diogo Gomes Viana - Sistema da Informação (5487452) 
+ - Mateus Meneses Neco - Engenharia de Software (5571108)
+ - Matheus Nunes Barbosa - Engenharia de Software (5045033)
+ - Renato Farias de Paiva - Sistema da Informação (6449757)
 
 ## Modelagem física
 
