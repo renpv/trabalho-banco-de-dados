@@ -139,30 +139,18 @@ FROM Item_Pedido ip
 JOIN Pedido p ON ip.id_pedido = p.id_pedido
 JOIN Produto pr ON ip.id_produto = pr.id_produto;
 ```
-~~
-### Consultas de Agregação
-10.	Calcular o subtotal, impostos e total do carrinho:
-```sql
-SELECT c.id_carrinho,
-       SUM(p.preco * ic.quantidade) AS subtotal,
-       SUM(p.preco * ic.quantidade) * 0.1 AS impostos, -- Supondo 10% de impostos
-       SUM(p.preco * ic.quantidade) + SUM(p.preco * ic.quantidade) * 0.1 AS total
-FROM Carrinho c
-JOIN Item_Carrinho ic ON c.id_carrinho = ic.id_carrinho
-JOIN Produto p ON ic.id_produto = p.id_produto
-GROUP BY c.id_carrinho;
-```
-~~ 
+
+
 ### Consultas de Atualização e Exclusão
 
-11.	Atualizar informações de um produto:
+10.	Atualizar informações de um produto:
 ```sql
 UPDATE Produto
 SET nome = 'Novo Nome', preco = 19.99, descricao = 'Nova Descrição', estoque = 50
 WHERE id_produto = 1; -- Substitua 1 pelo ID do produto a ser atualizado
 ```
 
-12.	Remover um produto do catálogo:
+11.	Remover um produto do catálogo:
 ```sql
 DELETE FROM Produto
 WHERE id_produto = 1; -- Substitua 1 pelo ID do produto a ser removido
@@ -170,7 +158,7 @@ WHERE id_produto = 1; -- Substitua 1 pelo ID do produto a ser removido
 
 ### Consultas para Relatórios
 
-13.	Listar o histórico de pedidos com detalhes de envio e pagamento:
+12.	Listar o histórico de pedidos com detalhes de envio e pagamento:
 ```sql
 SELECT p.id_pedido, p.data_pedido, p.total, p.status,
        e.endereco, e.cidade, e.estado, e.cep, e.data_envio, e.metodo_envio,
@@ -180,7 +168,7 @@ LEFT JOIN Envio e ON p.id_pedido = e.id_pedido
 LEFT JOIN Pagamento pg ON p.id_pedido = pg.id_pedido;
 ```
 
-14.	Listar produtos mais vendidos:
+13.	Listar produtos mais vendidos:
 ```sql
 SELECT pr.nome AS produto_nome, SUM(ip.quantidade) AS quantidade_vendida
 FROM Item_Pedido ip
