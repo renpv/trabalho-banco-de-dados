@@ -8,6 +8,21 @@ O presente trabalho faz parte da disciplina Experiência Profissional: Banco de 
  - Matheus Nunes Barbosa - Engenharia de Software (5045033)
  - Renato Farias de Paiva - Sistema da Informação (6449757)
 
+## Modelagem conceitual
+
+O modelo conceitual foi criado com a ferramenta [BrModelo](https://www.brmodeloweb.com/lang/pt-br/index.html).
+
+![image](https://github.com/renpv/trabalho-banco-de-dados/assets/829761/f882d262-5475-48b3-b23b-adf5ec437dc8)
+
+[Clique aqui](https://app.brmodeloweb.com/#!/publicview/66870bc24a3cddfe4616b6ac) para acessar o modelo conceitual
+
+## Modelagem lógica
+
+![image](https://github.com/renpv/trabalho-banco-de-dados/assets/829761/acc574b6-abf5-4160-9bd8-0bb657d870ed)
+
+[Clique aqui](https://app.brmodeloweb.com/#!/publicview/66870d4d4a3cddfe4616b6e8) para acessar o modelo lógico
+
+
 ## Modelagem física
 
 Abaixo segue o código para criação do banco de dados, suas tabelas e respectivos relacionamentos
