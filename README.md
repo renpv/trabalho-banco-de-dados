@@ -139,7 +139,7 @@ FROM Item_Pedido ip
 JOIN Pedido p ON ip.id_pedido = p.id_pedido
 JOIN Produto pr ON ip.id_produto = pr.id_produto;
 ```
-
+~~
 ### Consultas de Agregação
 10.	Calcular o subtotal, impostos e total do carrinho:
 ```sql
@@ -152,6 +152,7 @@ JOIN Item_Carrinho ic ON c.id_carrinho = ic.id_carrinho
 JOIN Produto p ON ic.id_produto = p.id_produto
 GROUP BY c.id_carrinho;
 ```
+~~ 
 ### Consultas de Atualização e Exclusão
 
 11.	Atualizar informações de um produto:
